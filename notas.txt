@@ -1,0 +1,21 @@
+Mobile First
+1. Todo lo que este fuera del media query es para dispositivo movil
+2. Los mediaqueries se definen incrementando su breakpoint
+3. Los breakpoints se definen usando el ancho minimo 'min-width'
+4. Los estilos se definen dentro del cuerpo del @media
+
+Desktop First
+1. Todo lo que este fuera del media query es para el Desktop
+2. Los mediaqueries se definen decrementando su breakpoint
+3. Los breakpoints se definen usando el ancho maximo 'max-width'
+4. Los estilos se definen dentro del cuerpo del @media
+
+breakpoints
+567px
+768px
+992px
+1280px
+1366px
+1920px
+
+Nota: No se requiere definir todos los breakpoints, es decir solo definimos los que necesitamos

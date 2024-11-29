@@ -75,12 +75,22 @@ body {
 }
 .main-container {
     background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
 }
+@media ( min-width: 567px ) {
+    .main-container {
+        flex-direction: row;
+    }
+}
+
 .aside {
     background-color: crimson;
+    flex-basis: 280px;
 }
 .main-content {
     background-color: orange;
+    flex-basis: 100%;
 }
 
 /** Footer */

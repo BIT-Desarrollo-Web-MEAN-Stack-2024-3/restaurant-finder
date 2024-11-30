@@ -29,7 +29,45 @@ body {
 /** Main */
 .section-search {
     background-color: blue;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.section-search h1 {
+    color: white;
+    max-width: 327px;
+    width: 100vw;
+}
+
+.banner-img-restaurant {
+    width: 100vw;
+    height: 305px;
+    object-fit: cover;
+    position: relative;
+}
+.search-field {
+    height: 305px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-field input[type="text"] {
+    width: 100vw;
+    height: 60px;
+    padding: 10px 16px;
+    max-width: 388px;
+    border-radius: .8rem;
+    border: 1px solid transparent;
+    outline: none;
+}
+
 .main-container {
     background-color: black;
     display: flex;
@@ -76,7 +114,18 @@ body {
         max-width: 992px;
         padding: 0 32px;
     }
+    .section-search h1 {
+        max-width: 622px;
+    }
+    .search-field input[type="text"] {
+        max-width: 870px;
+    }
+    .banner-img-restaurant,
+    .search-field  {
+        height: 368px;
+    }
 }
+
 
 @media ( min-width: 1200px ) {
     .container {

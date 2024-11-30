@@ -1,4 +1,5 @@
 Mobile First
+
 1. Todo lo que este fuera del media query es para dispositivo movil
 2. Los mediaqueries se definen incrementando su breakpoint
 3. Los breakpoints se definen usando el ancho minimo 'min-width'
@@ -19,3 +20,21 @@ breakpoints
 1920px
 
 Nota: No se requiere definir todos los breakpoints, es decir solo definimos los que necesitamos
+
+Unidades de medida
+
+pt: puntos
+px: pixels
+%: porcentage
+
+em: 
+rem: 
+
+1rem = 16px;
+1rem = 10px;
+
+341px --> 34.1rem  (10px)
+45px  --> 4.5rem
+
+vw
+vh

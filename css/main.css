@@ -3,8 +3,17 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;       /** Cambiar la proporcion de 1rem que equivale a 16px a basa 10 donde ahora equivale 10px */
+}
+
 body {
     background-color: pink;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 /** Header */
@@ -17,7 +26,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 8px;
+    padding: 0 .8rem;
 }
 .container-fluid {
     max-width: 100%;
@@ -37,18 +46,21 @@ body {
 }
 .section-search h1 {
     color: white;
-    max-width: 327px;
+    max-width: 32.7rem;
     width: 100vw;
+}
+
+.banner-img-restaurant,
+.search-field {
+    height: 30.5rem;
 }
 
 .banner-img-restaurant {
     width: 100vw;
-    height: 305px;
     object-fit: cover;
     position: relative;
 }
 .search-field {
-    height: 305px;
     position: absolute;
     top: 0;
     display: flex;
@@ -60,9 +72,9 @@ body {
 
 .search-field input[type="text"] {
     width: 100vw;
-    height: 60px;
-    padding: 10px 16px;
-    max-width: 388px;
+    height: 6rem;
+    padding: 1rem 1.6rem;
+    max-width: 38.8rem;
     border-radius: .8rem;
     border: 1px solid transparent;
     outline: none;
@@ -88,41 +100,43 @@ body {
 }
 
 
-/** Media Queries: Container */
+/** Media Queries: Container 
+    NOTA: Los breakpoints solo soportan px
+*/
 @media ( min-width: 567px ) {
     .container {
-        max-width: 540px;
-        padding: 0 16px;
+        max-width: 54rem;
+        padding: 0 1.6rem;
     }
     .main-container {
         flex-direction: row;
     }
     .aside {
-        flex-basis: 280px;
+        flex-basis: 28rem;
     }
 }
 
 @media ( min-width: 768px ) {
     .container {
-        max-width: 720px;
-        padding: 0 24px;
+        max-width: 72rem;
+        padding: 0 2.4rem;
     }
 }
 
 @media ( min-width: 1024px ) {
     .container {
-        max-width: 992px;
-        padding: 0 32px;
+        max-width: 99.2rem;
+        padding: 0 3.2rem;
     }
     .section-search h1 {
-        max-width: 622px;
+        max-width: 62.2rem;
     }
     .search-field input[type="text"] {
-        max-width: 870px;
+        max-width: 87rem;
     }
     .banner-img-restaurant,
     .search-field  {
-        height: 368px;
+        height: 36.8rem;
     }
 }
 
@@ -130,27 +144,27 @@ body {
 @media ( min-width: 1200px ) {
     .container {
         max-width: 1140px;
-        padding: 0 40px;
+        padding: 0 4rem;
     }
 }
 
 @media ( min-width: 1400px ) {
     .container {
         max-width: 1320px;
-        padding: 0 48px;
+        padding: 0 4.8rem;
     }
 }
 
 @media ( min-width: 1600px ) {
     .container {
         max-width: 1440px;
-        padding: 0 56px;
+        padding: 0 5.6rem;
     }
 }
 
 @media ( min-width: 1920px ) {
     .container {
         max-width: 1600px;
-        padding: 0 64px;
+        padding: 0 6.4rem;
     }
 }
